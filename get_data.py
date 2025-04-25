@@ -1,3 +1,5 @@
+#Note to me, make sure it's (32, 30) so we don't face stupid problems when dealing with matrix multiplication
+
 import numpy as np
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
