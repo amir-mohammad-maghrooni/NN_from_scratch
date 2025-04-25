@@ -4,7 +4,7 @@ import numpy as np
 def sigmoid(x):
  return 1 / (1 + np.exp(-x))
  
-def relu(x):
+def relu(x): #indintation error
     return np.maximum(0, x)
 
 def sigmoid_derivative(x):
@@ -28,8 +28,8 @@ class NeuralUnit:
         adjusted_signal = combined_signal + self.__threshold_shift
 
         # Apply the Sigmoid activation function and relU
-        final_output = sigmoid(adjusted_signal)
-        final_output = relu(adjusted_signal)
+        final_output = sigmoid(adjusted_signal) #variable error
+        final_output = relu(adjusted_signal) #variable error again
         
         return final_output
 
