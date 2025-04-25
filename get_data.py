@@ -10,7 +10,7 @@ def load_data(test_size = 0.2, random_state = 42): #non GPU version lol
     scalar = StandardScaler()
     x = scalar.fit_transform(x)
 
-    x_train, y_train, x_test, y_test = train_test_split(x, y, 
+    x_train, x_test, y_train, y_test = train_test_split(x, y, 
                                         test_size=test_size, 
                                         random_state= random_state, 
                                         stratify=y)
