@@ -41,24 +41,21 @@ This project implements a **Neural Network from scratch**, built entirely with *
 
 ```
 ---
-## Results :
-Test Accuracy: 91.4%
+### ✅ Results
 
-Confusion Matrix:
+- **Test Accuracy**: **91.4%**
+
+- **Confusion Matrix**:
+
+  |                | **Predicted Malignant** | **Predicted Benign** |
+  |----------------|-------------------------|-----------------------|
+  | **Actual Malignant** | 38 (True Negative)        | 4 (False Positive)     |
+  | **Actual Benign**    | 2 (False Negative)        | 70 (True Positive)     |
 
 
-Predicted Malignant	Predicted Benign
-Actual Malignant	38 (True Negative)	4 (False Positive)
-Actual Benign	2 (False Negative)	70 (True Positive)
-Interpretation:
+- **Training Accuracy & Loss Over Time**:
 
-TN = 38 → Correctly identified malignant tumors
-
-FP = 4 → Benign tumors mistakenly classified as malignant
-
-FN = 2 → Malignant tumors missed (critical!)
-
-TP = 70 → Correctly identified benign tumors
+  ![Training Curve](images/NN_scratch.png)
 
 ---
 
